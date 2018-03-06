@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  numeros: Array<number> = [];
+
+  addNumber(n){
+    this.numeros.push(n.value);
+    n.value='';
+  }
+
+  reset(){
+    this.numeros = [];
+  }
 }
