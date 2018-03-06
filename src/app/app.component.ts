@@ -13,7 +13,8 @@ export class AppComponent {
     n.value='';
   }
 
-  reset(){
+  reset(n){
     this.numeros = [];
+    n.value='';
   }
 }

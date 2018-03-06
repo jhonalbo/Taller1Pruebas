@@ -3,7 +3,7 @@
   <input #number type="number"  id="real_number" ng-required="true">
   <button (click)="addNumber(number)">Agregar</button>
   <p>
-      <button (click)="reset()">Reset</button>
+      <button (click)="reset(number)">Reset</button>
       <button (click)="addNumber(number)">Calcular media</button>
       <button (click)="addNumber(number)">Calcular desviación estándar</button>
   </p>
