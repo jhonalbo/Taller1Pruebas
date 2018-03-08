@@ -1,6 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<br>
+<br>
 <div style="text-align:center">
-  <input #number type="number"  id="real_number" ng-required="true">
+  <input #number type="number"  id="real_number" ng-required="true" style="width: 280px">
   <button (click)="addNumber(number)">Agregar</button>
   <p>
       <button (click)="reset(number)">Reset</button>
@@ -12,7 +14,11 @@
 
 </div>
 <h3>
-    <div *ngFor="let n of numeros" style="text-align:center">
-      {{ n }}
-    </div>
+  <table>
+    <tr>
+      <td *ngFor="let n of numeros" style="text-align:center">
+          {{ n }}
+      </td>
+    <tr>
+  </table>
 </h3>
